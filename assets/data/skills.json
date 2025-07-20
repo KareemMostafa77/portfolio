@@ -1,0 +1,172 @@
+[
+  {
+    "title": "Frontend Technologies",
+    "icon": "fas fa-code",
+    "skills": [
+      {
+        "name": "Angular",
+        "icon": "fab fa-angular"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "fab fa-js-square"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js-square"
+      },
+      {
+        "name": "HTML5",
+        "icon": "fab fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fab fa-css3-alt"
+      },
+      {
+        "name": "Ionic",
+        "icon": "fas fa-mobile-alt"
+      },
+      {
+        "name": "Electron",
+        "icon": "fas fa-desktop"
+      },
+      {
+        "name": "RxJS",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "jQuery",
+        "icon": "fab fa-js-square"
+      },
+      {
+        "name": "Pug.js",
+        "icon": "fas fa-code"
+      }
+    ]
+  },
+  {
+    "title": "Styling & Design",
+    "icon": "fas fa-paint-brush",
+    "skills": [
+      {
+        "name": "SCSS/Sass",
+        "icon": "fab fa-sass"
+      },
+      {
+        "name": "Angular Material",
+        "icon": "fas fa-layer-group"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "fab fa-bootstrap"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "fas fa-wind"
+      },
+      {
+        "name": "NgPrime",
+        "icon": "fas fa-layer-group"
+      },
+      {
+        "name": "Figma",
+        "icon": "fab fa-figma"
+      }
+    ]
+  },
+  {
+    "title": "Backend & Database",
+    "icon": "fas fa-server",
+    "skills": [
+      {
+        "name": "Node.js",
+        "icon": "fab fa-node-js"
+      },
+      {
+        "name": "Express.js",
+        "icon": "fas fa-server"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "fas fa-database"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      },
+      {
+        "name": "SQL",
+        "icon": "fas fa-database"
+      },
+      {
+        "name": "REST APIs",
+        "icon": "fas fa-exchange-alt"
+      },
+      {
+        "name": "PHP",
+        "icon": "fab fa-php"
+      },
+      {
+        "name": "Laravel",
+        "icon": "fab fa-laravel"
+      }
+    ]
+  },
+  {
+    "title": "Tools & DevOps",
+    "icon": "fas fa-tools",
+    "skills": [
+      {
+        "name": "Git",
+        "icon": "fab fa-git-alt"
+      },
+      {
+        "name": "GitHub",
+        "icon": "fab fa-github"
+      },
+      {
+        "name": "GitHub Copilot",
+        "icon": "fas fa-robot"
+      },
+      {
+        "name": "Cursor",
+        "icon": "fas fa-mouse-pointer"
+      },
+      {
+        "name": "CI/CD",
+        "icon": "fas fa-infinity"
+      },
+      {
+        "name": "Docker",
+        "icon": "fab fa-docker"
+      },
+      {
+        "name": "Postman",
+        "icon": "fas fa-paper-plane"
+      },
+      {
+        "name": "Swagger",
+        "icon": "fas fa-code"
+      }
+    ]
+  },
+  {
+    "title": "Cloud & AI",
+    "icon": "fas fa-cloud",
+    "skills": [
+      {
+        "name": "Azure AI Fundamentals",
+        "icon": "fab fa-microsoft"
+      },
+      {
+        "name": "Prompt Engineering",
+        "icon": "fas fa-brain"
+      },
+      {
+        "name": "Copilot AI Development",
+        "icon": "fas fa-robot"
+      }
+    ]
+  }
+]

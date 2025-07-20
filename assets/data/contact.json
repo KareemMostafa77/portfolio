@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Email",
+    "value": "kareemmostafa77@hotmail.com",
+    "icon": "fas fa-envelope",
+    "link": "mailto:kareemmostafa77@hotmail.com"
+  },
+  {
+    "title": "Phone",
+    "value": "+201550829268",
+    "icon": "fas fa-phone",
+    "link": "tel:+201550829268"
+  },
+  {
+    "title": "WhatsApp",
+    "value": "+201550829268",
+    "icon": "fab fa-whatsapp",
+    "link": "https://wa.me/201550829268"
+  },
+  {
+    "title": "LinkedIn",
+    "value": "linkedin.com/in/kareem-mostafa-b8b36b195",
+    "icon": "fab fa-linkedin",
+    "link": "https://linkedin.com/in/kareem-mostafa-b8b36b195"
+  },
+  {
+    "title": "GitHub",
+    "value": "github.com/KareemMostafa77",
+    "icon": "fab fa-github",
+    "link": "https://github.com/KareemMostafa77"
+  }
+]

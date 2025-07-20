@@ -1,0 +1,74 @@
+[
+  {
+    "position": "Senior Frontend Developer",
+    "company": "THIQAH Business Services – Saudi Arabia – Hybird",
+    "period": "Dec 2023 - Present",
+    "description": "Leading UI revamp initiatives with focus on performance, modular architecture, and maintainability in a remote environment. Driving analytics integration and mentoring team members.",
+    "achievements": [
+      "Leading comprehensive UI revamp initiatives focusing on performance optimization and modular architecture",
+      "Mentoring frontend developers and sharing advanced optimization techniques to promote team growth",
+      "Driving integration of analytics and UX insights tools to improve product quality and customer experience",
+      "Contributing to company-wide hiring processes and establishing internal documentation best practices"
+    ]
+  },
+  {
+    "position": "Senior Frontend Developer",
+    "company": "Kashier Payment Solution  – Egypt – Hybrid ",
+    "period": "Oct 2023 - Dec 2023",
+    "description": "Enhanced UI consistency across payment portals and integrated frontend features with third-party logistics systems in a hybrid work environment.",
+    "achievements": [
+      "Collaborated with product teams to enhance UI consistency across multiple payment portals",
+      "Gained extensive experience integrating frontend features with third-party logistics and shipping systems",
+      "Improved payment flow user experience through consistent design patterns",
+      "Optimized payment portal performance and cross-platform compatibility"
+    ]
+  },
+  {
+    "position": "MEAN Stack Developer",
+    "company": "Shoaa Company – Egypt – Onsite",
+    "period": "Sep 2022 - Sep 2023",
+    "description": "Developed full-stack web solutions using Angular, Node.js, and Express.js. Served as technical liaison between stakeholders and engineering teams across finance and administrative sectors.",
+    "achievements": [
+      "Developed comprehensive full-stack web solutions and APIs using Angular, Node.js, and Express.js",
+      "Acted as technical liaison between stakeholders and engineering teams, leading requirements analysis",
+      "Delivered scalable business applications across finance, utilities, and administrative sectors",
+      "Led cross-functional collaboration to transform business requirements into technical solutions"
+    ]
+  },
+  {
+    "position": "Frontend Developer (Mid-Level)",
+    "company": "Easy Way Web – France & Egypt – Remote",
+    "period": "Jun 2020 - Aug 2022",
+    "description": "Worked remotely across France & Egypt developing web and cross-platform desktop applications using Electron and Angular. Led frontend development and assumed partial leadership responsibilities.",
+    "achievements": [
+      "Led frontend development for both web and cross-platform desktop applications using Electron and Angular",
+      "Transformed complex business logic into performant, user-friendly interfaces",
+      "Assumed partial leadership in project planning and code review processes",
+      "Worked cross-functionally to deliver high-quality UI implementations across multiple platforms"
+    ]
+  },
+  {
+    "position": "Frontend Developer (Junior-Level)",
+    "company": "Volcano Agency – Egypt – Onsite",
+    "period": "Nov 2019 - Apr 2020",
+    "description": "Contributed to web and cross-platform mobile app development using Ionic and modern frontend technologies. Gained hands-on experience with client interaction and cross-platform frameworks.",
+    "achievements": [
+      "Developed web and cross-platform mobile applications using Ionic and modern frontend technologies",
+      "Contributed to commercial website and mobile app development using modern UI practices",
+      "Gained hands-on experience with cross-platform frameworks and direct client interaction",
+      "Transformed client requirements into functional, attractive user interfaces"
+    ]
+  },
+  {
+    "position": "Freelance Frontend Developer",
+    "company": "Independent Projects",
+    "period": "2019 - Present",
+    "description": "Created dynamic UI component systems and delivered full frontend solutions for trading and financial platforms, managing data-heavy modules and real-time features.",
+    "achievements": [
+      "Created dynamic and reusable UI component system suitable for multiple platforms including CMS solutions",
+      "Delivered full frontend solutions for trading and financial platforms with complex data visualization",
+      "Managed data-heavy modules and implemented real-time interaction features",
+      "Developed custom solutions for diverse client requirements across various industries"
+    ]
+  }
+]

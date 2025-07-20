@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Details - Senior Frontend Developer Portfolio">
+    <title>Project Details | Kareem Sultan</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/project-detail.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container" style="justify-content: center;">
+            <div class="navbar__brand">
+                <a href="index.html" class="navbar__logo">
+                    <i class="fas fa-code"></i>
+                    <span>Kareem Sultan</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-detail__nav">
+                <a href="index.html#projects" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Projects
+                </a>
+            </div>
+            
+            <div class="project-detail__header">
+                <h1 class="project-detail__title" id="project-title">Loading...</h1>
+            </div>
+            
+            <div class="project-detail__image" id="project-image">
+                <!-- Main image will be loaded here -->
+            </div>
+            
+            <div class="project-detail__content">
+                <div class="project-detail__main">
+                    <div class="project-detail__description" id="project-description">
+                        Loading project details...
+                    </div>
+                    
+                    <div class="project-detail__info-section">
+                        <div class="project-detail__role-company">
+                            <div class="info-item">
+                                <strong>Role:</strong> <span id="project-role-text"></span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Company:</strong> <span id="project-company-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail__screenshots" id="project-screenshots">
+                        <!-- Screenshots will be loaded here -->
+                    </div>
+                </div>
+                
+                <div class="project-detail__sidebar">
+                    <div class="project-detail__info-card">
+                        <h3>Technologies</h3>
+                        <div class="tech-tags" id="project-tech">
+                            <!-- Technologies will be loaded here -->
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail__info-card">
+                        <h3>Project Links</h3>
+                        <div class="project-detail__actions" id="project-links">
+                            <!-- Links will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/utils.js"></script>
+    <script>
+        // Get project name from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectTitle = urlParams.get('project');
+        
+        if (!projectTitle) {
+            window.location.href = 'index.html#projects';
+        }
+        
+        // Load project data and populate the page
+        async function loadProjectDetail() {
+            try {
+                const response = await fetch('assets/data/projects.json');
+                const projects = await response.json();
+                const project = projects.find(p => p.title === decodeURIComponent(projectTitle));
+                
+                if (!project) {
+                    window.location.href = 'index.html#projects';
+                    return;
+                }
+                
+                // Update page title
+                document.title = `${project.title} | Kareem Sultan`;
+                
+                // Populate content
+                document.getElementById('project-title').textContent = project.title;
+                document.getElementById('project-description').textContent = project.description;
+                
+                // Populate role and company in the info section
+                document.getElementById('project-role-text').textContent = project.role;
+                document.getElementById('project-company-text').textContent = project.company;
+                
+                // Main image
+                const imageContainer = document.getElementById('project-image');
+                if (project.image) {
+                    imageContainer.innerHTML = `<img src="${project.image}" alt="${project.title}" loading="eager">`;
+                } else {
+                    imageContainer.innerHTML = `<i class="fas fa-code" style="font-size: 4rem; color: var(--text-inverse);"></i>`;
+                }
+                
+                // Technologies
+                const techContainer = document.getElementById('project-tech');
+                techContainer.innerHTML = project.technologies.map(tech => 
+                    `<span class="tech-tag">${tech}</span>`
+                ).join('');
+                
+                // Screenshots
+                const screenshotsContainer = document.getElementById('project-screenshots');
+                if (project.screenshots && project.screenshots.length > 0) {
+                    screenshotsContainer.innerHTML = `
+                        <h3>Additional Screenshots</h3>
+                        <div class="screenshots-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slides" id="carousel-slides">
+                                    ${project.screenshots.map((screenshot, index) => `
+                                        <div class="carousel-slide">
+                                            <img src="${screenshot}" alt="${project.title} Screenshot ${index + 1}" loading="lazy">
+                                        </div>
+                                    `).join('')}
+                                </div>
+                                <button class="carousel-nav carousel-nav--prev" id="carousel-prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-nav carousel-nav--next" id="carousel-next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <div class="carousel-counter" id="carousel-counter">
+                                    1 / ${project.screenshots.length}
+                                </div>
+                            </div>
+                            <div class="carousel-indicators" id="carousel-indicators">
+                                ${project.screenshots.map((_, index) => `
+                                    <div class="carousel-indicator ${index === 0 ? 'active' : ''}" data-slide="${index}"></div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Initialize carousel functionality
+                    initializeCarousel(project.screenshots.length);
+                } else {
+                    screenshotsContainer.style.display = 'none';
+                }
+                
+                // Links
+                const linksContainer = document.getElementById('project-links');
+                const links = [];
+                if (project.demo) {
+                    links.push(`<a href="${project.demo}" class="btn btn--primary" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                    </a>`);
+                }
+                if (project.github) {
+                    links.push(`<a href="${project.github}" class="btn btn--secondary" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        Source Code
+                    </a>`);
+                }
+                linksContainer.innerHTML = links.length > 0 ? links.join('') : '<p>No external links available</p>';
+                
+            } catch (error) {
+                console.error('Error loading project data:', error);
+                window.location.href = 'index.html#projects';
+            }
+        }
+        
+        // Initialize carousel functionality
+        function initializeCarousel(totalSlides) {
+            let currentSlide = 0;
+            const slidesContainer = document.getElementById('carousel-slides');
+            const prevButton = document.getElementById('carousel-prev');
+            const nextButton = document.getElementById('carousel-next');
+            const counter = document.getElementById('carousel-counter');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            
+            function updateCarousel() {
+                // Move slides
+                slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                // Update counter
+                counter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+                
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentSlide);
+                });
+                
+                // Update navigation buttons
+                prevButton.disabled = currentSlide === 0;
+                nextButton.disabled = currentSlide === totalSlides - 1;
+            }
+            
+            function goToSlide(slideIndex) {
+                currentSlide = Math.max(0, Math.min(slideIndex, totalSlides - 1));
+                updateCarousel();
+            }
+            
+            function nextSlide() {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    updateCarousel();
+                }
+            }
+            
+            function prevSlide() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateCarousel();
+                }
+            }
+            
+            // Event listeners
+            prevButton.addEventListener('click', prevSlide);
+            nextButton.addEventListener('click', nextSlide);
+            
+            // Indicator clicks
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => goToSlide(index));
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') prevSlide();
+                if (e.key === 'ArrowRight') nextSlide();
+            });
+            
+            // Touch/swipe support
+            let startX = 0;
+            let endX = 0;
+            
+            const carouselContainer = document.querySelector('.carousel-container');
+            
+            carouselContainer.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+            });
+            
+            carouselContainer.addEventListener('touchend', (e) => {
+                endX = e.changedTouches[0].clientX;
+                handleSwipe();
+            });
+            
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                const diff = startX - endX;
+                
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        nextSlide(); // Swipe left, go to next
+                    } else {
+                        prevSlide(); // Swipe right, go to previous
+                    }
+                }
+            }
+            
+            // Initialize
+            updateCarousel();
+        }
+        
+        // Load project detail when page loads
+        loadProjectDetail();
+    </script>
+</body>
+</html>

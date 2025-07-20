@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Senior Frontend Developer Portfolio - Angular & JavaScript Expert">
+    <meta name="keywords" content="Frontend Developer, Angular, JavaScript, TypeScript, React, Portfolio">
+    <meta name="author" content="Kareem Mostafa Soltan">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Senior Frontend Developer Portfolio">
+    <meta property="og:description" content="Experienced Frontend Developer specializing in Angular, JavaScript, and modern web technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <title>Kareem Sultan | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container">
+            <div class="navbar__brand">
+                <a href="#" class="navbar__logo">
+                    <i class="fas fa-code"></i>
+                    <span>Kareem Sultan</span>
+                </a>
+            </div>
+            
+            <div class="navbar__menu" id="navbar-menu">
+                <ul class="navbar__nav">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#projects" class="navbar__link">Projects</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#experience" class="navbar__link">Experience</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#skills" class="navbar__link">Skills</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contact" class="navbar__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="navbar__controls">
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-menu-toggle">
+                    <button class="mobile-menu-toggle__btn" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__greeting">Hello, I'm</span>
+                        <span class="hero__name">Kareem Mostafa Sultan</span>
+                    </h1>
+                    <h2 class="hero__subtitle">Senior Frontend Developer</h2>
+                    <p class="hero__description">
+                        Specialized in Angular, JavaScript, and modern web technologies with 5+ years of experience building scalable applications.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="assets/Kareem Mostafa.pdf" class="btn btn--primary" download>
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                        <a href="#contact" class="btn btn--secondary">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                        <a href="#projects" class="btn btn--outline">
+                            <i class="fas fa-search"></i>
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">About Me</h2>
+                <p class="section-header__subtitle">
+                    Passionate frontend developer building scalable web applications
+                </p>
+            </div>
+            
+            <div class="about__content">
+                <div class="about__bio" id="about-bio">
+                    <!-- Bio will be loaded dynamically -->
+                </div>
+                
+                <div class="about__highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="highlight-card__title">Clean Code</h3>
+                        <p class="highlight-card__text">Writing maintainable, scalable code following best practices</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="highlight-card__title">Performance</h3>
+                        <p class="highlight-card__text">Optimizing applications for speed and user experience</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="highlight-card__title">Team Lead</h3>
+                        <p class="highlight-card__text">Leading development teams and mentoring developers</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="highlight-card__title">Responsive</h3>
+                        <p class="highlight-card__text">Creating seamless experiences across all devices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">Featured Projects</h2>
+                <p class="section-header__subtitle">
+                    A showcase of my recent work and technical expertise
+                </p>
+            </div>
+            
+            <!-- Project Filters -->
+            <div class="project-filters" id="project-filters">
+                <!-- Filter buttons will be generated dynamically -->
+            </div>
+            
+            <div class="projects__grid" id="projects-grid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">Work Experience</h2>
+                <p class="section-header__subtitle">
+                    My professional journey and key achievements
+                </p>
+            </div>
+            
+            <div class="experience__timeline" id="experience-timeline">
+                <!-- Timeline will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">Technical Skills</h2>
+                <p class="section-header__subtitle">
+                    Technologies and tools I work with
+                </p>
+            </div>
+            
+            <div class="skills__content" id="skills-content">
+                <!-- Skills will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">Certifications</h2>
+                <p class="section-header__subtitle">
+                    Professional certifications and achievements
+                </p>
+            </div>
+            
+            <div class="certifications__grid" id="certifications-grid">
+                <!-- Certifications will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">Get In Touch</h2>
+                <p class="section-header__subtitle">
+                    Let's discuss your next project
+                </p>
+            </div>
+            
+            <div class="contact__content">
+                <div class="contact__cards">
+                    <!-- Contact cards will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__text">
+                    <p>Crafted by me with AI assistance.</p>
+                </div>
+                <div class="footer__social">
+                    <!-- Social links will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Spinner -->
+    <div class="loading" id="loading">
+        <div class="loading__spinner"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/render.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
