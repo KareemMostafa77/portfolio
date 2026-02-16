@@ -3,12 +3,21 @@
     "position": "Senior Frontend Developer",
     "company": "THIQAH Business Services – Saudi Arabia – Hybird",
     "period": "Dec 2023 - Present",
-    "description": "Leading UI revamp initiatives with focus on performance, modular architecture, and maintainability in a remote environment. Driving analytics integration and mentoring team members.",
+    "description": "Leading frontend engineering initiatives across enterprise web platforms with strong ownership of UI architecture, performance optimization, and development workflows. Driving modern Angular practices, scalable frontend architecture, and AI-assisted development while mentoring engineers and contributing to cross-team technical excellence.",
     "achievements": [
-      "Leading comprehensive UI revamp initiatives focusing on performance optimization and modular architecture",
-      "Mentoring frontend developers and sharing advanced optimization techniques to promote team growth",
-      "Driving integration of analytics and UX insights tools to improve product quality and customer experience",
-      "Contributing to company-wide hiring processes and establishing internal documentation best practices"
+      "Led frontend architecture design using modular Angular patterns, feature-based structure, and shared core libraries to ensure scalability, maintainability, and long-term system stability.",
+      "Built reusable UI component systems and design-aligned frontend foundations adopted across multiple teams, reducing duplication and accelerating delivery.",
+      "Owned frontend code quality standards including folder structure, naming conventions, state handling patterns, and performance best practices.",
+      "Defined Git workflows and branching strategies, ensuring clean version control, predictable releases, and collaborative development.",
+      "Conducted pull request reviews, providing architectural guidance, enforcing coding standards, improving readability, and mentoring engineers through constructive feedback.",
+      "Drove performance optimization initiatives through refactoring, removal of legacy dependencies, lazy loading, and modern Angular best practices.",
+      "Integrated analytics and UX insight tooling to support data-driven product decisions and improve customer experience.",
+      "Applied AI-assisted development workflows to improve delivery speed, code quality, and developer productivity while reducing repetitive engineering tasks.",
+      "Mentored frontend developers on architecture, performance tuning, and optimization techniques, contributing to team growth and engineering maturity.",
+      "Collaborated closely with backend, design, QA, and product teams to deliver high-quality features across multiple initiatives.",
+      "Provided cross-team technical support by resolving complex UI issues and contributing to shared frontend standards and internal documentation.",
+      "Participated in technical interviews and hiring processes for frontend and full-stack roles.",
+      "Recognized internally for strong ownership, consistent delivery, and leadership in frontend engineering practices."
     ]
   },
   {
